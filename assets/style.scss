@@ -1,0 +1,66 @@
+@import "~bulma/bulma.sass";
+
+html {
+  @extend .has-navbar-fixed-top;
+}
+
+html,
+body {
+  background-color: $light;
+}
+
+.control-bar {
+  height: $navbar-height;
+  @extend .has-text-light;
+  @extend .has-background-dark;
+  @extend .px-3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  > div {
+    display: flex;
+    align-items: center;
+
+    button {
+      @extend .mx-2;
+    }
+  }
+}
+
+.centered-container {
+  @extend .container;
+  @extend .my-6;
+  @extend .p-1;
+  @extend .content;
+
+  >img {
+    @extend .mb-6;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.editors-container {
+  @extend .columns;
+  @extend .p-4;
+  overflow-y: auto;
+  width: 100vw;
+}
+
+.center-and-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clock {
+  @extend .has-text-centered;
+  @extend .has-text-grey;
+  strong {
+    @extend .has-text-grey;
+  }
+  font-size: .9rem;
+}
